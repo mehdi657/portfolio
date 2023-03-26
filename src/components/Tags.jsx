@@ -9,7 +9,7 @@ const Tags = ({ tage }) => {
         initiallyVisible={true}
         décalage="0"
       >
-        <img src={`./${tage}.png`} alt={tage} title={tage} />
+        <img src={require(`../assets/${tage}.png`)} alt={tage} title={tage} />
       </AnimationOnScroll>
     </li>
   );

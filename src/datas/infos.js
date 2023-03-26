@@ -25,7 +25,7 @@ export const infos = [
     cover: "lapanthère.png",
     code: "https://github.com/mehdi657/Agence-La-Panthere",
     lien: "https://mehdi657.github.io/Agence-La-Panthere/",
-    description: "Analyse de l’état actuel et amélioration du SEO du site / ",
+    description: "Analyse de l’état actuel et amélioration du SEO du site",
     tag: ["html", "css", "lighthouse"],
   },
   {
@@ -50,6 +50,6 @@ export const infos = [
     cover: "kasa.png",
     code: "https://github.com/mehdi657/Kasa",
     description: "Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !)",
-    tag: ["react","figma"],
+    tag: ["react","figma", "sass"],
   },
 ];

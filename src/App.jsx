@@ -5,15 +5,13 @@ import Projects from "./pages/Projects";
 import "animate.css";
 import "animate.css/animate.min.css";
 
-
 function App() {
-
   return (
     <Router>
       <Routes>
-          <Route exact path="/portfolio" element={<Accueil />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/APropos" element={<APropos />} />
+        <Route exact path="/" element={<Accueil />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/APropos" element={<APropos />} />
       </Routes>
     </Router>
   );
