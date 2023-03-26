@@ -1,0 +1,22 @@
+.logo{
+    &_cont{
+        height: 3vw;
+        width: 3vw;
+        position: absolute;
+        left: 3vw;
+        top: 1vw;
+    }
+    a{
+        @extend %width;
+    }
+    &_img1{
+        @extend %width;
+    }
+    &_img2{
+        width: 130%;
+        height: 140%;
+    }
+    .hidden{
+        display: none;
+    }
+}

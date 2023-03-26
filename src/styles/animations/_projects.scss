@@ -1,0 +1,32 @@
+@keyframes translateProj {
+  from {
+    top: 1.6vw;
+    right: 20vw;
+    transform:  scale(150%);
+    text-shadow: $tshadow;
+  }
+  to {
+    top: 16vw;
+    right: 46.5vw;
+  transform:  scale(150%);
+  text-shadow: $tshadow;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0%);
+  }
+  to {
+  transform: scale(100%);
+  }
+}
+
+.transp{
+  animation: translateProj 1s ease-in-out forwards;
+  position: absolute;
+}
+
+.scal{
+  animation: scale 1s ease-in-out;
+}

@@ -1,0 +1,14 @@
+
+$color-primary: rgb(255, 255, 255);
+$color-secondary: black;
+$color-tertiary: rgb(0, 170, 255);
+
+$color-fond1: rgb(4, 63, 136);
+$color-fond2: rgb(88, 156, 215);
+$color-fond3: #a95eff;
+$color-fond4: #2d004a;
+$color-fond5: #000548;
+$gradient: linear-gradient(180deg, $color-fond1 10%, $color-fond2 100%);
+
+$tshadow: 1vw 1vw 1vw $color-fond2;
+$bshadow: 1vw 1vw 2vw $color-fond1;

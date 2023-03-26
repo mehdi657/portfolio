@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+@import "./animations/accueil";
+@import "./animations/projects";
+@import "./animations/apropos";
+
+@import "./components/Logo";
+@import "./components/linkedin";
+@import "./components/github";
+@import "./components/cv";
+@import "./components/theme";
+
+@import "./layout/general";
+@import "./layout/header";
+@import "./layout/projet";
+
+@import "./pages/accueil";
+@import "./pages/apropos";
+
+// @import "./layout/mediastyle";

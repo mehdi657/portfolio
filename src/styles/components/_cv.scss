@@ -1,0 +1,10 @@
+.cv{
+    width: 10vw;
+    img{
+        @include width(50%);
+    }
+    .outils{
+        @extend %flex-center;
+        height: 40%;
+    }
+}

@@ -1,0 +1,17 @@
+header{
+    height: 5vw;   
+    @extend %flex-end;
+    width: 100%;
+    font-size: 1.5vw;
+    ul{
+        width: 30%;
+        @extend %flex-around;
+    }
+    .boule:hover{
+            text-shadow: $tshadow;
+            font-size: 2vw;
+    }
+    a{
+        @extend %width;
+    }
+}

@@ -1,0 +1,111 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4vw;
+  height: 2vw;
+  border: 0.3vw solid $color-fond3;
+  color: $color-fond2;
+  border-radius: 1vw;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em $color-fond1, 0 0 4em 1em $color-fond1;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-tertiary;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5vw;
+  width: 1.5vw;
+  border-radius: 20px;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: $color-primary;
+  transition: 0.4s;
+}
+
+.sun {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 1.5vw;
+  height: 1.4vw;
+}
+
+.moon {
+  fill: $color-tertiary;
+  position: absolute;
+  top: 0.15vw;
+  left: 0.2vw;
+  z-index: 1;
+  width: 0.8vw;
+  height: 1.2vw;
+}
+
+.sun {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.moon {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.input:checked + .slider {
+  background-color: $color-fond1;
+}
+
+.input:focus + .slider {
+  box-shadow: 0 0 1px $color-fond1;
+}
+
+.input:checked + .slider:before {
+  transform: translateX(2vw);
+}

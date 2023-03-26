@@ -1,0 +1,55 @@
+import { v4 as uuidv4 } from "uuid";
+
+export const infos = [
+  {
+    id: uuidv4(),
+    titre: "Booki",
+    cover: "booki.png",
+    code: "https://github.com/mehdi657/site-Booki",
+    lien: "https://mehdi657.github.io/site-Booki/",
+    description: "Intégrer l'interface du site avec du code HTML et CSS à partir d'une maquette pour un site Internet qui permette aux usagers de trouver des hébergements et des activités ",
+    tag: ["html", "css"],
+  },
+  {
+    id: uuidv4(),
+    titre: "ohmyfood",
+    cover: "ohmyfood.png",
+    code: "https://github.com/mehdi657/ohmyfood",
+    lien: "https://mehdi657.github.io/ohmyfood/",
+    description: "développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques",
+    tag: ["html", "sass", "github"],
+  },
+  {
+    id: uuidv4(),
+    titre: "La Panthere",
+    cover: "lapanthère.png",
+    code: "https://github.com/mehdi657/Agence-La-Panthere",
+    lien: "https://mehdi657.github.io/Agence-La-Panthere/",
+    description: "Analyse de l’état actuel et amélioration du SEO du site / ",
+    tag: ["html", "css", "lighthouse"],
+  },
+  {
+    id: uuidv4(),
+    titre: "Kanap",
+    cover: "kanap.png",
+    code: "https://github.com/mehdi657/Kanap",
+    description: "Intégrer dynamiquement les éléments de l’API dans les différentes pages web avec JavaScript, création d'un panier via le local storage, et envoi de la commande au serveur.",
+    tag: ["js", "api", "localstorage"],
+  },
+  {
+    id: uuidv4(),
+    titre: "piiquante",
+    cover: "piiquante.png",
+    code: "https://github.com/mehdi657/piiquante",
+    description: "créer une API sécurisée pour une application web de critique des sauces piquantes",
+    tag: ["nodejs", "mongodb", "express"],
+  },
+  {
+    id: uuidv4(),
+    titre: "Kasa",
+    cover: "kasa.png",
+    code: "https://github.com/mehdi657/Kasa",
+    description: "Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !)",
+    tag: ["react","figma"],
+  },
+];
