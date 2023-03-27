@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.33bd53b3.css",
+    "main.js": "/static/js/main.feadf8d3.js",
+    "static/media/CV AIT MOULAY.pdf": "/static/media/CV AIT MOULAY.dc82dc93274f42db6e55.pdf",
+    "static/media/figma.png": "/static/media/figma.e3eda632293ac2143a26.png",
+    "static/media/booki.png": "/static/media/booki.bc8a69520342101b008c.png",
+    "static/media/photo.png": "/static/media/photo.dd383b2cc6856da3d838.png",
+    "static/media/mongodb.png": "/static/media/mongodb.71feb69583f5dd86ba58.png",
+    "static/media/js.png": "/static/media/js.b36f26a841e8638efa1c.png",
+    "static/media/sun.png": "/static/media/sun.c7c61d8b26b227c1e1f1.png",
+    "static/media/api.png": "/static/media/api.1c2574abf0d8db69849a.png",
+    "static/media/html.png": "/static/media/html.1d7b133e22ffe4829da6.png",
+    "static/media/kanap.png": "/static/media/kanap.38028576cf0ed13f671d.png",
+    "static/media/kasa.png": "/static/media/kasa.4333d4c37afae41470c1.png",
+    "static/media/lapanthère.png": "/static/media/lapanthère.bc2e4c413026dc8f5209.png",
+    "static/media/css.png": "/static/media/css.9f33c557b92e4e2e1cc8.png",
+    "static/media/moon.png": "/static/media/moon.0af7540f91f76a9acaa3.png",
+    "static/media/lighthouse.png": "/static/media/lighthouse.d69724446086a42739f4.png",
+    "static/media/ohmyfood.png": "/static/media/ohmyfood.8be2f3d5407e3874f3a3.png",
+    "static/media/nodejs.png": "/static/media/nodejs.fb1a26c217122a83cc52.png",
+    "static/media/react.png": "/static/media/react.20adfb35ae6a6e5817bf.png",
+    "static/media/AE-S.png": "/static/media/AE-S.96d5e3288b18fe2906ea.png",
+    "static/media/sass.png": "/static/media/sass.051888ab516950ed48cb.png",
+    "static/media/localstorage.png": "/static/media/localstorage.f49cef517a2b0ac6b644.png",
+    "static/media/piiquante.png": "/static/media/piiquante.6a8ef2fda35f47f5fea3.png",
+    "index.html": "/index.html",
+    "main.33bd53b3.css.map": "/static/css/main.33bd53b3.css.map",
+    "main.feadf8d3.js.map": "/static/js/main.feadf8d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33bd53b3.css",
+    "static/js/main.feadf8d3.js"
+  ]
+}
