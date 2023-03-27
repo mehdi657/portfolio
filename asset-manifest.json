@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.33bd53b3.css",
-    "main.js": "/portfolio/static/js/main.3a484bcc.js",
+    "main.js": "/portfolio/static/js/main.c2ed242a.js",
     "static/media/CV AIT MOULAY.pdf": "/portfolio/static/media/CV AIT MOULAY.dc82dc93274f42db6e55.pdf",
     "static/media/figma.png": "/portfolio/static/media/figma.e3eda632293ac2143a26.png",
     "static/media/booki.png": "/portfolio/static/media/booki.bc8a69520342101b008c.png",
@@ -26,10 +26,10 @@
     "static/media/piiquante.png": "/portfolio/static/media/piiquante.6a8ef2fda35f47f5fea3.png",
     "index.html": "/portfolio/index.html",
     "main.33bd53b3.css.map": "/portfolio/static/css/main.33bd53b3.css.map",
-    "main.3a484bcc.js.map": "/portfolio/static/js/main.3a484bcc.js.map"
+    "main.c2ed242a.js.map": "/portfolio/static/js/main.c2ed242a.js.map"
   },
   "entrypoints": [
     "static/css/main.33bd53b3.css",
-    "static/js/main.3a484bcc.js"
+    "static/js/main.c2ed242a.js"
   ]
 }
