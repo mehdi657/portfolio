@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.33bd53b3.css",
-    "main.js": "/portfolio/static/js/main.c2ed242a.js",
-    "static/media/CV AIT MOULAY.pdf": "/portfolio/static/media/CV AIT MOULAY.dc82dc93274f42db6e55.pdf",
+    "main.css": "/portfolio/static/css/main.cf108ed5.css",
+    "main.js": "/portfolio/static/js/main.2d92ac6f.js",
+    "static/media/CV AIT MOULAY.pdf": "/portfolio/static/media/CV AIT MOULAY.17403416b7726ad89564.pdf",
+    "static/media/laptop.jpg": "/portfolio/static/media/laptop.02af2b6e6e26326cb2a3.jpg",
     "static/media/figma.png": "/portfolio/static/media/figma.e3eda632293ac2143a26.png",
+    "static/media/desk.jpg": "/portfolio/static/media/desk.96b46a7985bb0f9b6d63.jpg",
     "static/media/booki.png": "/portfolio/static/media/booki.bc8a69520342101b008c.png",
     "static/media/photo.png": "/portfolio/static/media/photo.dd383b2cc6856da3d838.png",
     "static/media/mongodb.png": "/portfolio/static/media/mongodb.71feb69583f5dd86ba58.png",
@@ -25,11 +27,11 @@
     "static/media/localstorage.png": "/portfolio/static/media/localstorage.f49cef517a2b0ac6b644.png",
     "static/media/piiquante.png": "/portfolio/static/media/piiquante.6a8ef2fda35f47f5fea3.png",
     "index.html": "/portfolio/index.html",
-    "main.33bd53b3.css.map": "/portfolio/static/css/main.33bd53b3.css.map",
-    "main.c2ed242a.js.map": "/portfolio/static/js/main.c2ed242a.js.map"
+    "main.cf108ed5.css.map": "/portfolio/static/css/main.cf108ed5.css.map",
+    "main.2d92ac6f.js.map": "/portfolio/static/js/main.2d92ac6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.33bd53b3.css",
-    "static/js/main.c2ed242a.js"
+    "static/css/main.cf108ed5.css",
+    "static/js/main.2d92ac6f.js"
   ]
 }
