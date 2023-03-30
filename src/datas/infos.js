@@ -52,4 +52,39 @@ export const infos = [
     description: "Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !)",
     tag: ["react","figma", "sass"],
   },
+  {
+    id: uuidv4(),
+    titre: "portfolio",
+    cover: "portfolio.png",
+    code: "https://github.com/mehdi657/portfolio",
+    description: `Créations de mon site "portfolio" avec React.js et sass`,
+    tag: ["react", "sass"],
+  },
 ];
+
+export const experiences = [
+  {
+    id: uuidv4(),
+    titre: `Formation`,
+    date: "2022-2023",
+    description: "Diplôme de Développeur web et web mobiles, Openclassrooms, niveau 5, Bac+2 RNCP",
+  },
+  {
+    id: uuidv4(),
+    titre: `Chef d’entreprise " E.M.A.M CONNECT " Saint-Mandé`,
+    date: "2017-2021",
+    description: "Créer et gérer une entreprise, installer et expliquer les équipements aux clients et intervenir pour le SAV  ",
+  },
+  {
+    id: uuidv4(),
+    titre: `Technicien fibre optique "N&K" ( Sous traitant ORANGE )`,
+    date: "2015 - 2016",
+    description: "Prise des mesures du signal, vérification du bon fonctionnement, installation et explication des équipements aux clients ",
+  },
+  {
+    id: uuidv4(),
+    titre: "D’autres expériences dans d’autres domaines",
+    date: "2004 - 2014",
+    description: "Accueil, conseil clients, vente, télévente,  pâtisserie ",
+  },
+]

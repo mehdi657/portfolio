@@ -1,14 +1,18 @@
-
 $color-primary: rgb(255, 255, 255);
 $color-secondary: black;
 $color-tertiary: rgb(0, 170, 255);
 
 $color-fond1: rgb(4, 63, 136);
 $color-fond2: rgb(88, 156, 215);
-$color-fond3: #a95eff;
+$color-fond3: burlywood;
 $color-fond4: #2d004a;
 $color-fond5: #000548;
 $gradient: linear-gradient(180deg, $color-fond1 10%, $color-fond2 100%);
+$gradient2: linear-gradient(180deg, $color-fond4 10%, $color-fond1 100%);
+$gradient3: linear-gradient(110deg, $color-fond2 0%, $color-fond3 100%);
 
 $tshadow: 1vw 1vw 1vw $color-fond2;
 $bshadow: 1vw 1vw 2vw $color-fond1;
+$bshadow2: 1vw 1vw 2vw $color-fond3;
+$bbsadow1: 1.3vw 1.3vw 30px $color-fond3, -1.3vw -1.3vw 30px $color-fond3;
+$bbsadow2: 1.3vw 1.3vw 30px $color-fond2, -1.3vw -1.3vw 30px $color-fond2;

@@ -6,20 +6,20 @@ const Projet = (props) => {
 
   return (
     <>
-        <aside className="projet scal">
-          <img
-            src={require(`../images/${props.data.cover}`)}
-            alt="aperçu du project"
-            className="projet_img"
-          />
-          <h3 className="projet_tit">{props.data.titre}</h3>
-          <p className="projet_txt">{props.data.description}</p>
-          <ul className="projet_lang">
-            {props.data.tag.map((tag, index) => (
-              <Tags key={index} tage={tag} />
-            ))}
-          </ul>
-        </aside>
+      <aside className="projet scal">
+        <img
+          src={require(`../images/${props.data.cover}`)}
+          alt="aperçu du project"
+          className="projet_img"
+        />
+        <h3 className="projet_tit">{props.data.titre}</h3>
+        <p className="projet_txt">{props.data.description}</p>
+        <ul className="projet_lang">
+          {props.data.tag.map((tag, index) => (
+            <Tags key={index} tage={tag} />
+          ))}
+        </ul>
+      </aside>
       <aside className="projet_lien">
         {lien ? (
           <div className="scal">

@@ -1,17 +1,19 @@
-header{
-    height: 5vw;   
-    @extend %flex-end;
-    width: 100%;
-    font-size: 1.5vw;
-    ul{
-        width: 30%;
-        @extend %flex-around;
-    }
-    .boule:hover{
-            text-shadow: $tshadow;
-            font-size: 2vw;
-    }
-    a{
-        @extend %width;
-    }
+header {
+  height: 5vw;
+  @extend %flex-end;
+  width: 100%;
+  padding-right: 2vw;
+  font-size: 1.5vw;
+  background: rgba(220, 239, 245, 0.274);
+  ul {
+    width: 30%;
+    @extend %flex-around;
+  }
+  .boule:hover {
+    text-shadow: $tshadow;
+    font-size: 2vw;
+  }
+  a {
+    @extend %width;
+  }
 }

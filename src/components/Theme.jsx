@@ -20,10 +20,11 @@ const Theme = () => {
       check.setAttribute("checked", "checked");
     }
   };
+
   return (
     <label className="switch">
-      <img src={sun} alt="soleil" className="sun"/>
-      <img src={moon} alt="soleil" className="moon"/>
+      <img src={sun} alt="soleil" className="sun" />
+      <img src={moon} alt="soleil" className="moon" />
       <input
         type="checkbox"
         className="input"

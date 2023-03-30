@@ -1,20 +1,6 @@
-.about {
-  padding-top: 5vw;
-  &_txt {
-    width: 90%;
-    margin: 15vw auto;
-    padding: 4vw;
-    background: $gradient;
-    border-radius: 20px;
-    box-shadow: $bshadow;
-  }
-}
 .reseaux {
   @include flex(flex, column, nowrap, center, center);
-  width: 90%;
-  &_anim{
-      width: 100%;
-  }
+  width: 100%;
   &_titre {
     margin-bottom: 6vw;
     font-size: 2vw;
@@ -22,13 +8,9 @@
   }
   &_lien {
     @extend %flex-around;
-    background: $gradient;
-    border-radius: 20px;
     box-shadow: $bshadow;
     width: 100%;
     margin: auto;
-    margin-bottom: 10vw;
     padding: 4vw;
-    color: $color-tertiary;
   }
 }

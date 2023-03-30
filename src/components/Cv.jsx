@@ -1,8 +1,8 @@
 import React from "react";
 import pdf from "../assets/CV AIT MOULAY.pdf";
-import cv from "../assets/CV AIT MOULAY.png";
-import loupe from "../assets/eye-icon.png";
-import download from "../assets/kisspng-pdf.png";
+import cv from "../assets/cv.png";
+import loupe from "../assets/eye.png";
+import download from "../assets/télécharger.png";
 
 const Cv = () => {
   return (
@@ -14,6 +14,7 @@ const Cv = () => {
             <img src={loupe} alt="voir" title="visualiser"/>
           </a>
         </p>
+        <p>CV</p>
         <p>
           <a href={pdf} download>
             <img src={download} alt="telecharger" title="télécharger"/>

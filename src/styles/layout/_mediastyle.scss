@@ -1,0 +1,133 @@
+@media screen and (max-width: 500px) {
+  header {
+    ul {
+      width: 45%;
+      font-size: 2.5vw;
+    }
+    .boule:hover {
+      font-size: 3vw;
+    }
+    .switch {
+      margin-top: 1.5vw;
+    }
+  }
+  .accueil {
+    margin: 8vw auto;
+    &_titre {
+      font-size: 4vw;
+    }
+    .hello {
+      font-size: 7vw;
+    }
+    .name {
+      margin-top: 8vw;
+    }
+    &_img {
+      @include width(40vw);
+      margin-top: 10vw;
+    }
+    .content {
+      width: 65vw;
+      height: 7vw;
+      top: 10vw;
+      &__container {
+        font-size: 3vw;
+        &__text {
+          padding-left: 6vw;
+          margin-top: 1vw;
+        }
+        &__list {
+          margin-top: 1vw;
+          margin-left: 6vw;
+        }
+        &__item {
+          height: 3vw;
+        }
+      }
+    }
+    .about_txt {
+      margin: 15vw auto;
+      padding: 6vw;
+      font-size: 3vw;
+    }
+  }
+  .projet {
+    font-size: 2.5vw;
+    @include width(90vw, 40vw);
+    &_tit {
+      top: -2%;
+    }
+    &_txt {
+      top: 3vw;
+    }
+    &_lien {
+      width: 90vw;
+      div {
+        @include width(50%, 5vw);
+        font-size: 2.5vw;
+        padding-top: 3px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .timeline {
+    font-size: 2.5vw;
+    .column::before {
+      left: 50px;
+      height: calc(100% / 5 * 4);
+      top: 50px;
+    }
+    .row {
+      flex-flow: column wrap;
+      height: 150px;
+    }
+    .row:nth-child(even) {
+      flex-direction: column;
+      div:last-child {
+        text-align: start;
+      }
+      h3::before {
+        top: 5px;
+      }
+    }
+    .time:last-child {
+      text-align: start;
+    }
+    .icon {
+      order: 1;
+      flex: 1 1 100%;
+      padding-top: 50px;
+      width: 100px;
+    }
+    .time {
+      order: 2;
+      flex: 1 1 50px;
+      width: calc(100% - 100px);
+    }
+    .text {
+      order: 3;
+      flex: 1 1 calc(100% - 50px);
+      width: calc(100% - 100px);
+      h3 {
+        height: 20%;
+      }
+      p {
+        height: 80%;
+      }
+    }
+    .row:nth-child(odd) {
+      h3::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        border: 10px solid rgba(0, 0, 0, 0);
+        border-right-color: $color-fond1;
+      }
+      h3::after {
+        border: none;
+      }
+    }
+  }
+}

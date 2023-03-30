@@ -1,55 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap");
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-body{
-    width: 90%;
-    margin: auto;
-    font-family: 'Merienda',"Montserrat", sans-serif;
-    font-size: 1.5vw;
-    text-align: center;
-    overflow-x:hidden;
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Merienda", "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  text-align: center;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
-.theme_jour{
-    background: linear-gradient(110deg, $color-fond3 0%, $color-fond2 100%);
+.theme_jour {
+  background: url("../assets/laptop.jpg") fixed center;
+  color: $color-secondary;
+  a {
     color: $color-secondary;
-    a{
-        color: $color-secondary;
-    }
+  }
+  header {
+    box-shadow: $bshadow;
+  }
+  .accueil_li,
+  .projet,
+  .projet_lien div,
+  .about_txt,
+  .reseaux_lien,
+  .text > h3 {
+    background: $gradient;
+  }
 }
 
-.theme_nuit{
-    background: linear-gradient(110deg, $color-fond4 30%, $color-fond5 100%);
+.theme_nuit {
+  background: url("../assets/desk.jpg") fixed center;
+  color: $color-primary;
+  a {
     color: $color-primary;
-    a{
-        color: $color-primary;
-    }
+  }
+  header {
+    box-shadow: $bshadow2;
+  }
+  .accueil_li,
+  .projet,
+  .projet_lien div,
+  .about_txt,
+  .reseaux_lien,
+  .text > h3 {
+    background: $gradient2;
+  }
 }
 
-#root{
-    @extend %flex-between;
-    flex-direction: column;
+#root {
+  @extend %flex-between;
+  flex-direction: column;
 }
 
-ul, ol{
-    list-style-type: none;
+ul,
+ol {
+  list-style-type: none;
 }
 
-::-webkit-scrollbar{
-    width: 0px;
-    // background: #3e93fc;
+::-webkit-scrollbar {
+  width: 0px;
 }
-
-// ::-webkit-scrollbar-thumb{
-//     background: $color-fond3;
-//     border-radius: 12px;
-//     border: 3px double $color-fond2;
-// }

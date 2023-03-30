@@ -3,45 +3,32 @@
   @extend %width;
   border-radius: 20px;
   margin: 5vw auto;
-  &_tim {
-    @include flex(flex, column, nowrap, space-around, center);
-  }
-  &_titre {
-    @include flex(flex, column, nowrap, space-around, center);
+  &_name {
     font-size: 3vw;
+    height: 12vw;
+    width: 100%;
     font-weight: 900;
-    .nom {
-      margin-right: 3vw;
-    }
-    .metier {
-      margin: 3vw;
-    }
+    margin-top: 5vw;
+  }
+  &_nom {
+    margin: 1.5vw;
   }
   &_img {
     @include width(25vw);
     border-radius: 30px;
-    box-shadow: 1.3vw 1.3vw 30px $color-fond1, -1.3vw -1.3vw 30px $color-fond3;
+    box-shadow: $bbsadow2;
     img {
       @include width(80%);
       margin-top: 10%;
     }
   }
-  &_nav {
-    @extend %flex-around;
-    padding: 0;
-    width: 50%;
-  }
-  &_li {
-    background-color: $color-primary;
-    padding: 1.5vw;
-    margin: 3vw;
-    border-radius: 30px;
-    box-shadow: $bshadow;
-    background: $gradient;
-    opacity: 0.8;
-  }
-  &_li:hover {
-    opacity: 1;
-    font-size: 1.7vw;
-  }
+}
+.hello {
+  font-size: 5vw;
+  font-weight: 900;
+}
+.about_txt {
+  margin: 10vw auto;
+  padding: 4vw;
+  box-shadow: $bshadow;
 }

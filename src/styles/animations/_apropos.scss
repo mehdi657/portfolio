@@ -4,8 +4,8 @@
     text-shadow: $tshadow;
   }
   to {
-  transform: translateX(-33vw) translateY(13vw) scale(150%);
-  text-shadow: $tshadow;
+    transform: translateX(-33vw) translateY(13vw) scale(150%);
+    text-shadow: $tshadow;
   }
 }
 
@@ -24,7 +24,7 @@
   animation: fadeInRight 1s;
 }
 
-.transa{
+.transa {
   animation: translateApro 0.9s ease-in-out forwards;
   position: absolute;
 }

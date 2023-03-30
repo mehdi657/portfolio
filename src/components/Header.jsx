@@ -14,19 +14,32 @@ const Header = () => {
     if (location.pathname === "/APropos") {
       setIsActive(2);
     }
+    if (location.pathname === "/") {
+      setIsActive(3);
+    }
   }, [location]);
-
-
 
   return (
     <header className="transtransY">
       <Logo />
       <ul>
         <Link to="/Projects" className="boule">
-          <li className={` ${isActive === 1 ? "transp" : ""}`}>projects</li>
+          <li
+            className={` ${isActive === 1 ? "transp" : ""}${
+              isActive === 3 ? "" : ""
+            }`}
+          >
+            projects
+          </li>
         </Link>
         <Link to="/APropos" className="boule">
-          <li className={` ${isActive === 2 ? "transa" : ""}`}>A propos</li>
+          <li
+            className={` ${isActive === 2 ? "transa" : ""}${
+              isActive === 3 ? "" : ""
+            }`}
+          >
+            A propos
+          </li>
         </Link>
         <li className="theme">
           <Theme />

@@ -11,6 +11,8 @@
 @import "./components/github";
 @import "./components/cv";
 @import "./components/theme";
+@import "./components/metier";
+@import "./components/timeline";
 
 @import "./layout/general";
 @import "./layout/header";
@@ -19,4 +21,4 @@
 @import "./pages/accueil";
 @import "./pages/apropos";
 
-// @import "./layout/mediastyle";
+@import "./layout/mediastyle";
