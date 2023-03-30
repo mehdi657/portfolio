@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cf108ed5.css",
-    "main.js": "/portfolio/static/js/main.2d92ac6f.js",
+    "main.css": "/portfolio/static/css/main.b3cd5e43.css",
+    "main.js": "/portfolio/static/js/main.6b971093.js",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.b4b1da250d6dd0ae66e8.png",
     "static/media/CV AIT MOULAY.pdf": "/portfolio/static/media/CV AIT MOULAY.17403416b7726ad89564.pdf",
     "static/media/laptop.jpg": "/portfolio/static/media/laptop.02af2b6e6e26326cb2a3.jpg",
     "static/media/figma.png": "/portfolio/static/media/figma.e3eda632293ac2143a26.png",
@@ -27,11 +28,11 @@
     "static/media/localstorage.png": "/portfolio/static/media/localstorage.f49cef517a2b0ac6b644.png",
     "static/media/piiquante.png": "/portfolio/static/media/piiquante.6a8ef2fda35f47f5fea3.png",
     "index.html": "/portfolio/index.html",
-    "main.cf108ed5.css.map": "/portfolio/static/css/main.cf108ed5.css.map",
-    "main.2d92ac6f.js.map": "/portfolio/static/js/main.2d92ac6f.js.map"
+    "main.b3cd5e43.css.map": "/portfolio/static/css/main.b3cd5e43.css.map",
+    "main.6b971093.js.map": "/portfolio/static/js/main.6b971093.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf108ed5.css",
-    "static/js/main.2d92ac6f.js"
+    "static/css/main.b3cd5e43.css",
+    "static/js/main.6b971093.js"
   ]
 }
