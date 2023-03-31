@@ -492,7 +492,7 @@ body {
 }
 
 .theme_jour {
-  background: url("../assets/laptop1.jpg") fixed no-repeat top center;
+  background: url("../assets/laptop.jpg") fixed center;
   color: black;
 }
 .theme_jour a {
@@ -511,7 +511,7 @@ body {
 }
 
 .theme_nuit {
-  background: url("../assets/desk1.jpg") fixed right;
+  background: url("../assets/desk.jpg") fixed right;
   color: rgb(255, 255, 255);
 }
 .theme_nuit a {
@@ -673,6 +673,12 @@ header .boule:hover {
 }
 
 @media screen and (max-width: 650px) {
+  .theme_jour {
+    background: url("../assets/laptop1.jpg") fixed top center;
+  }
+  .theme_nuit {
+    background: url("../assets/desk1.jpg") fixed right;
+  }
   .timeline .column::before {
     left: 50px;
     height: 80%;

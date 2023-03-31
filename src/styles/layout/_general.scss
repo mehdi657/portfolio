@@ -19,7 +19,7 @@ body {
 }
 
 .theme_jour {
-  background: url("../assets/laptop1.jpg") fixed no-repeat top center;
+  background: url("../assets/laptop.jpg") fixed center;
   color: $color-secondary;
   a {
     color: $color-secondary;
@@ -38,7 +38,7 @@ body {
 }
 
 .theme_nuit {
-  background: url("../assets/desk1.jpg") fixed right;
+  background: url("../assets/desk.jpg") fixed right;
   color: $color-primary;
   a {
     color: $color-primary;
