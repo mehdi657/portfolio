@@ -30,18 +30,18 @@
     box-shadow: $bshadow;
     width: 80vw;
     border-radius: 5px;
-    h3 {
-      margin: 0;
-      padding: 1vw;
-      font-size: 1.5vw;
-      border-radius: 5px 5px 0 0;
-    }
-    p {
-      padding: 1rem;
-      margin: 0;
-      background: rgba(190, 190, 190, 0.241);
-      text-align: justify;
-    }
+  }
+  h3 {
+    margin: 0;
+    padding-top: 1vw;
+    font-size: 1.5vw;
+    border-radius: 5px 5px 0 0;
+  }
+  p {
+    padding: 1rem;
+    margin: 0;
+    background: rgba(190, 190, 190, 0.241);
+    text-align: justify;
   }
   .icon {
     flex: 1 1 100px;

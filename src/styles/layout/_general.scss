@@ -16,11 +16,10 @@ body {
   font-size: 1.5vw;
   text-align: center;
   overflow-x: hidden;
-  min-height: 100vh;
 }
 
 .theme_jour {
-  background: url("../assets/laptop.jpg") fixed center;
+  background: url("../assets/laptop1.jpg") fixed no-repeat top center;
   color: $color-secondary;
   a {
     color: $color-secondary;
@@ -33,13 +32,13 @@ body {
   .projet_lien div,
   .about_txt,
   .reseaux_lien,
-  .text > h3 {
+  .text h3 {
     background: $gradient;
   }
 }
 
 .theme_nuit {
-  background: url("../assets/desk.jpg") fixed center;
+  background: url("../assets/desk1.jpg") fixed right;
   color: $color-primary;
   a {
     color: $color-primary;
@@ -52,7 +51,7 @@ body {
   .projet_lien div,
   .about_txt,
   .reseaux_lien,
-  .text > h3 {
+  .text h3 {
     background: $gradient2;
   }
 }

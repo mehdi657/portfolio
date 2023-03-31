@@ -7,14 +7,14 @@ const Theme = () => {
   const check = document.querySelector(".input");
 
   const handlChangeTheme = () => {
-    if (ele.classList.contains("theme_jour")) {
+    if (ele.className.includes("theme_jour")) {
       ele.classList.add("theme_nuit");
       ele.classList.remove("theme_jour");
     } else {
       ele.classList.remove("theme_nuit");
       ele.classList.add("theme_jour");
     }
-    if (check.contains("checked")) {
+    if (check.getAttribute("checked")) {
       check.removeAttribute("checked");
     } else {
       check.setAttribute("checked", "checked");

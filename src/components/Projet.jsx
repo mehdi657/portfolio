@@ -30,7 +30,7 @@ const Projet = (props) => {
           <a href={props.data.code}>voir le code</a>
         </div>
       </aside>
-    </>
+      </>
   );
 };
 
