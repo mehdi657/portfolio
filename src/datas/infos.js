@@ -49,6 +49,7 @@ export const infos = [
     titre: "Kasa",
     cover: "kasa.png",
     code: "https://github.com/mehdi657/Kasa",
+    lien: "https://mehdi657.github.io/Kasa/",
     description: "Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !)",
     tag: ["react","figma", "sass"],
   },
