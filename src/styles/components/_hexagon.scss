@@ -1,0 +1,50 @@
+.hexagon {
+  &_wrapper {
+    margin: auto;
+    display: flex;
+    text-align: initial;
+    @include width(10vw);
+  }
+  &_wrapper2 {
+    @extend %flex-center;
+    @include width(46%, 80%);
+    position: relative;
+    margin: auto;
+    color: white;
+    background: linear-gradient(-180deg, $color-tertiary, $color-fond5);
+    transition: 0.5s;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      background: inherit;
+      @extend %width;
+      transition: 0.5s;
+      transform-origin: center;
+    }
+    &:before {
+      transform: rotateZ(60deg);
+    }
+    &:after {
+      transform: rotateZ(-60deg);
+    }
+    &:hover,
+    &:hover:after,
+    &:hover:before {
+      border-radius: 50px;
+      transition: 0.5s;
+    }
+  }
+  &_icon {
+    @include width(50%);
+    z-index: 1;
+    margin: auto;
+    color: $color-secondary;
+  }
+  &_txt1 {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    font-size: 2.5vw;
+  }
+}

@@ -5,8 +5,8 @@ const Projet = (props) => {
   const lien = props.data.lien;
 
   return (
-    <>
-      <aside className="projet scal">
+    <aside>
+      <div className="projet">
         <img
           src={require(`../images/${props.data.cover}`)}
           alt="aperçu du project"
@@ -19,18 +19,18 @@ const Projet = (props) => {
             <Tags key={index} tage={tag} />
           ))}
         </ul>
-      </aside>
-      <aside className="projet_lien">
+      </div>
+      <div className="projet_liens">
         {lien ? (
-          <div className="scal">
-            <a href={lien}>visualiser le site</a>
-          </div>
+          <a href={lien} className="projet_liens_lien">
+            visualiser le site
+          </a>
         ) : null}
-        <div className="scal">
-          <a href={props.data.code}>voir le code</a>
-        </div>
-      </aside>
-      </>
+        <a href={props.data.code} className="projet_liens_lien">
+          voir le code
+        </a>
+      </div>
+    </aside>
   );
 };
 

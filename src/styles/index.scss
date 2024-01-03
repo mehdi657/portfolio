@@ -2,15 +2,12 @@
 @import "./utils/mixins";
 @import "./utils/placeholders";
 
-@import "./animations/accueil";
-@import "./animations/projects";
-@import "./animations/apropos";
+@import "./animations/metier";
+@import "./animations/theme";
 
-@import "./components/Logo";
-@import "./components/linkedin";
-@import "./components/github";
-@import "./components/cv";
+@import "./components/hexagon";
 @import "./components/theme";
+@import "./components/competence";
 @import "./components/metier";
 @import "./components/timeline";
 

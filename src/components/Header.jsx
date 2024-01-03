@@ -1,46 +1,24 @@
-import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import Logo from "./Logo";
+import Hexagon from "./Hexagon";
 import Theme from "./Theme";
 
 const Header = () => {
-  const [isActive, setIsActive] = useState(0);
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/Projects") {
-      setIsActive(1);
-    }
-    if (location.pathname === "/APropos") {
-      setIsActive(2);
-    }
-    if (location.pathname === "/") {
-      setIsActive(3);
-    }
-  }, [location]);
+  const onClick2 = () => {
+    window.location.href = "#Projects";
+  };
+  const onClick3 = () => {
+    window.location.href = "#APropos";
+  };
 
   return (
-    <header className="transtransY">
-      <Logo />
+    <header className=" head">
+      <Hexagon className=" head_logo" lien={"#accueil"} text1={"AE"} />
       <ul>
-        <Link to="/Projects" className="boule">
-          <li
-            className={` ${isActive === 1 ? "transp" : ""}${
-              isActive === 3 ? "" : ""
-            }`}
-          >
-            projects
-          </li>
-        </Link>
-        <Link to="/APropos" className="boule">
-          <li
-            className={` ${isActive === 2 ? "transa" : ""}${
-              isActive === 3 ? "" : ""
-            }`}
-          >
-            A propos
-          </li>
-        </Link>
+        <li onClick={onClick2} className="head_menu">
+          projects
+        </li>
+        <li onClick={onClick3} className="head_menu">
+          A propos
+        </li>
         <li className="theme">
           <Theme />
         </li>

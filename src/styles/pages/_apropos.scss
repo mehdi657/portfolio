@@ -1,10 +1,10 @@
 .reseaux {
   @include flex(flex, column, nowrap, center, center);
   width: 100%;
+  z-index: 1;
   &_titre {
-    margin-bottom: 6vw;
+    margin: 6vw auto;
     font-size: 2vw;
-    text-shadow: $tshadow;
   }
   &_lien {
     @extend %flex-around;

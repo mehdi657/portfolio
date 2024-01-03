@@ -1,35 +1,38 @@
-import React from "react";
+import React, { useContext } from "react";
 import sun from "../assets/sun.png";
 import moon from "../assets/moon.png";
+import { ThemeContext } from "../utils/context";
 
 const Theme = () => {
-  const ele = document.getElementById("body");
-  const check = document.querySelector(".input");
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
-  const handlChangeTheme = () => {
-    if (ele.className.includes("theme_jour")) {
-      ele.classList.add("theme_nuit");
-      ele.classList.remove("theme_jour");
-    } else {
-      ele.classList.remove("theme_nuit");
-      ele.classList.add("theme_jour");
-    }
-    if (check.getAttribute("checked")) {
-      check.removeAttribute("checked");
-    } else {
-      check.setAttribute("checked", "checked");
-    }
+  const handleToggleTheme = () => {
+    toggleTheme();
   };
+
+  const bodyClass = theme === "theme_jour" ? "theme_jour" : "theme_nuit";
+
+  document.body.className = bodyClass;
 
   return (
     <label className="switch">
-      <img src={sun} alt="soleil" className="sun" />
-      <img src={moon} alt="soleil" className="moon" />
+      <img
+        src={sun}
+        alt="soleil"
+        className={`sun ${theme === "theme_nuit" ? "hidden" : ""}`}
+      />
+      <img
+        src={moon}
+        alt="lune"
+        className={`moon ${theme === "theme_jour" ? "hidden" : ""}`}
+      />
       <input
+        id="input"
         type="checkbox"
         className="input"
-        onClick={handlChangeTheme}
-      ></input>
+        checked={theme === "theme_nuit"}
+        onChange={handleToggleTheme}
+      />
       <span className="slider"></span>
     </label>
   );

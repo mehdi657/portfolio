@@ -1,19 +1,35 @@
-header {
-  height: 5vw;
-  @extend %flex-end;
-  width: 100%;
+.head {
+  position: fixed;
+  z-index: 2;
+  @include width(100%, 5vw);
+  @extend %flex-between;
   padding-right: 2vw;
-  font-size: 1.5vw;
-  background: rgba(220, 239, 245, 0.274);
+  font-size: 1em;
+  .hexagon {
+    
+  @include width(5vw, 100%);
+    margin-left: 2vw;
+    &_wrapper{
+      @extend %width;
+    }
+  }
+  &_menu {
+    color: inherit;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 255, 0.5) 0%,
+        rgba(0, 255, 242, 0.5) 10%,
+        transparent 10.01%
+      )
+      no-repeat left bottom / 0 100%;
+    transition: background-size 0.3s;
+    cursor: pointer;
+  }
+  &_menu:hover {
+    background-size: 100% 100%;
+  }
   ul {
-    width: 30%;
+    @include width(40%, 100%);
     @extend %flex-around;
-  }
-  .boule:hover {
-    text-shadow: $tshadow;
-    font-size: 2vw;
-  }
-  a {
-    @extend %width;
   }
 }

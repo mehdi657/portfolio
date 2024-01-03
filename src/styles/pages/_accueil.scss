@@ -1,34 +1,28 @@
 .accueil {
-  @include flex(flex, column, nowrap, space-evenly, center);
+  @include flex(flex, column, nowrap, flex-start, center);
   @extend %width;
-  border-radius: 20px;
-  margin: 5vw auto;
-  &_name {
-    font-size: 3vw;
-    height: 12vw;
-    width: 100%;
-    font-weight: 900;
-    margin-top: 5vw;
-  }
-  &_nom {
-    margin: 1.5vw;
-  }
-  &_img {
-    @include width(25vw);
-    border-radius: 30px;
-    box-shadow: $bbsadow2;
-    img {
-      @include width(80%);
-      margin-top: 10%;
+  max-height: 100vh;
+  &_txt {
+    height: 100%;
+    width: 50%;
+    padding-top: 10%;
+    margin: auto;
+    span {
+      font-size: 2vw;
+      font-weight: 900;
+    }
+    &_name,
+    &_end {
+      width: 100%;
+      margin-top: 3vw;
+    }
+    &_nom {
+      margin: 1.2vw;
     }
   }
-}
-.hello {
-  font-size: 5vw;
-  font-weight: 900;
-}
-.about_txt {
-  margin: 10vw auto;
-  padding: 4vw;
-  box-shadow: $bshadow;
+  &_para {
+    font-size: 1.05em;
+    padding: 3%;
+    box-shadow: $bshadow;
+  }
 }

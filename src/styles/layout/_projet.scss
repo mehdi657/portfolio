@@ -1,16 +1,30 @@
 .proj_cards {
-  margin-top: 25vw;
+  @include flex(flex, column, nowrap, space-between, center);
+  z-index: 1;
+  &_titre {
+    margin: 8vw auto;
+    z-index: 1;
+  }
+  &_bloc {
+    @include flex(flex, row, wrap, space-between, center);
+    width: 100%;
+    aside {
+      width: 30%;
+      margin: auto;
+    }
+  }
 }
 .projet {
   border-radius: 1vw;
   position: relative;
-  @include width(70vw, 22vw);
+  @include width(100%, 13vw);
   box-shadow: $bshadow;
   margin: auto;
   &_tit {
+    width: 50%;
     position: absolute;
-    right: 20%;
-    top: -5%;
+    right: 0;
+    top: 0;
   }
   &_img {
     border-radius: 1vw;
@@ -19,39 +33,59 @@
     @include width(50%, 100%);
   }
   &_txt {
-    @include width(45%, 80%);
     position: absolute;
-    right: 2vw;
-    top: 2vw;
+    border-radius: 1vw;
+    z-index: -1;
+    @extend %width;
+    font-size: 1em;
+    text-align: center;
+    opacity: 0.95;
+    margin: auto;
     padding: 1vw;
   }
   &_lang {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 2vw;
     @extend %flex-around;
     @include width(50%, 20%);
     margin: auto;
     padding: 0;
     &_img {
       @include width(4vw);
-      .animate__rubberBand {
-        @extend %width;
-      }
       img {
         @extend %width;
       }
     }
   }
-  &_lien {
+  &_liens {
     @extend %flex-end;
-    width: 70vw;
     margin: 2vw auto 8vw;
-    div {
+    &_lien {
       box-shadow: $bshadow;
       border-radius: 50px;
       width: 16vw;
       margin: 5px;
+      transition: transform 0.15s ease-in-out;
+    }
+    &_lien:hover {
+      transform: scale(1.15);
+    }
+  }
+}
+.projet:hover {
+  .projet {
+    &_tit {
+      z-index: -1;
+    }
+    &_txt {
+      z-index: 1;
+    }
+    &_img {
+      z-index: -1;
+    }
+    &_lang {
+      z-index: -1;
     }
   }
 }

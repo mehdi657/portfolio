@@ -19,18 +19,39 @@ body {
 }
 
 .theme_jour {
-  background: url("../assets/laptop.jpg") fixed center;
+  background-color: $color-fond7;
   color: $color-secondary;
   a {
     color: $color-secondary;
   }
-  header {
+  .hexafond {
+    background: #c7e5f2;
+    &_row_hexagon {
+      background: #6f8baf;
+    }
+  }
+  *:hover .hexafond_cursor {
+    background: radial-gradient(
+      circle,
+      rgb(2, 75, 140) 40%,
+      rgba(2, 76, 140, 0.3) 80%
+    );
+    visibility: visible;
+  }
+  .accueil_presentation,
+  h2{
+    text-shadow: $tshadowj;
+  }
+  header,
+  .time > time,
+  .timelineText {
+    background-color: $color-fond7;
     box-shadow: $bshadow;
   }
   .accueil_li,
+  .accueil_para,
   .projet,
-  .projet_lien div,
-  .about_txt,
+  .projet_liens_lien,
   .reseaux_lien,
   .text h3 {
     background: $gradient;
@@ -38,18 +59,25 @@ body {
 }
 
 .theme_nuit {
-  background: url("../assets/desk.jpg") fixed right;
+  background-color: $color-secondary;
   color: $color-primary;
   a {
     color: $color-primary;
   }
-  header {
-    box-shadow: $bshadow2;
+  .accueil_presentation,
+  h2{
+    text-shadow: $tshadown;
+  }
+  header,
+  .time > time,
+  .timelineText {
+    background: rgba(26, 9, 49, 0.9);
+    box-shadow: $bshadow;
   }
   .accueil_li,
+  .accueil_para,
   .projet,
-  .projet_lien div,
-  .about_txt,
+  .projet_liens_lien,
   .reseaux_lien,
   .text h3 {
     background: $gradient2;
@@ -59,6 +87,10 @@ body {
 #root {
   @extend %flex-between;
   flex-direction: column;
+}
+
+.cursorDefault{
+  cursor: default;
 }
 
 ul,

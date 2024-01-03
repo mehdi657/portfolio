@@ -1,21 +1,21 @@
-import React from "react";
-import photo from "../assets/photo.png";
 import Metier from "../components/Metier";
+import "animate.css";
 
 const Accueil = () => {
+
   return (
-    <section className="accueil">
-      <span className="hello transY">Bonjour !!!</span>
-      <h1 className="accueil_name rubber">
-        <span>Je m'appelle </span>
-        <span className="accueil_nom">AIT MOULAY</span>
-        <span className="accueil_prenom">EL MEHDI</span>
-      </h1>
-      <div className="accueil_img transX1">
-        <img src={photo} alt="Ait moulay el mehdi" className="accueil_img" />
-      </div>
-      <Metier />
-      <p className="about_txt">
+    <section id="accueil" className="accueil cursorDefault">
+        <div className="accueil_txt">
+          <span className="accueil_txt_hello">Bonjour !!!</span>
+          <h1 className="accueil_txt_name">
+            <span>Je m'appelle </span>
+            <span className="accueil_txt_nom">AIT MOULAY</span>
+            <span className="accueil_txt_prenom">EL MEHDI</span>
+          </h1>
+          <span className="accueil_txt_end">&</span>
+          <Metier />
+        </div>
+      <p className="accueil_para">
         En tant qu'ancien dirigeant d'entreprise , j'ai décidé de m'orienter
         vers le numérique. Mon parcours dans différents secteurs d'activité m’a
         permis d’acquérir plusieurs compétences comme le travail d’équipe,
